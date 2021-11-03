@@ -4,11 +4,9 @@ A POC project evaluating gluegun framework for building a CLI for common fronten
 
 ## Basic pre-requisits in this POC:
 
-- User must be able to clone a repositry via `keiru clone {reponame} --branch={branchName}`
-- User must be able to clone a template located on a pre-configured repository via `keiru template {templatename}`;
+- User must be able to create a new project from a template repositry via `keiru new:project`
+
 - User must be able to run actions these on private repositories (user must have privilege access);
-- User must be able to setup a pre-defined node package folder structure via `keiru new pkg {packageName}`;
-- User must be able to create a pre-defined file template on different paths via `keiru new test {testName} --path=src/tests`;
 
 ## About Gluegun
 

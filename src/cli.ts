@@ -1,10 +1,11 @@
-const { build } = require('gluegun')
+import { build, GluegunToolbox } from 'gluegun'
+import { Options } from 'gluegun/build/types/domain/options'
 
 /**
  * Create the cli and kick it off
  */
-async function run(argv) {
-  // create a CLI runtime
+async function run(argv: string | Options): Promise<GluegunToolbox> {
+  // create a CLI
   const cli = build()
     .brand('keiru')
     .src(__dirname)
